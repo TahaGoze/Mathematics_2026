@@ -1,6 +1,24 @@
 
 # Exercise 2
 
+## Question
+
+Given matrices:
+
+A = [[1, 2], [-1, 3]]
+
+B = [[4, -2], [0, 5]]
+
+Calculate:
+
+1. A + B
+2. A - B
+3. 3A - 2B
+
+Explain why matrix addition is possible only for matrices of the same size.
+
+## Solution
+
 ## 1. Matrix Addition (A+B)
 
 Both matrices have the same size (2x2), so addition is possible.
