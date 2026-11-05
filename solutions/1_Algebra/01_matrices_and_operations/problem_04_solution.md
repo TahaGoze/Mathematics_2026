@@ -1,13 +1,27 @@
 
 # Exercise 4 - Matrix Multiplication
 
-## Given
+## Question
+
+Given the matrices:
 
 A = [[1, 2], [0, 1]]
 
 B = [[2, 0], [3, 1]]
 
-## 1. Calculate AB
+1. Calculate AB.
+2. Calculate BA.
+3. Is AB equal to BA?
+
+Use this example to explain what noncommutativity of matrix multiplication means.
+
+## Solution
+
+A = [[1, 2], [0, 1]]
+
+B = [[2, 0], [3, 1]]
+
+### 1. Calculate AB
 
 I multiplied each row of A by each column of B and added the results.
 
@@ -20,7 +34,7 @@ I multiplied each row of A by each column of B and added the results.
 
 AB = [[8, 2], [3, 1]]
 
-## 2. Calculate BA
+### 2. Calculate BA
 
 This time I multiplied the rows of B by the columns of A.
 
@@ -33,7 +47,7 @@ This time I multiplied the rows of B by the columns of A.
 
 BA = [[2, 4], [3, 7]]
 
-## 3. Comparison and Verification
+### 3. Comparison and Verification
 
 AB and BA are both possible because the matrices are 2 × 2.
 
