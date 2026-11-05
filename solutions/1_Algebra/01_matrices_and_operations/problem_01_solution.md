@@ -14,6 +14,24 @@ B = [[1, 0], [-2, 3], [4, 1]]
 
 ## Solution
 
+### Explanation
+
+To find the size of a matrix, I count its rows and columns.
+
+- Matrix A has 2 rows and 3 columns, so its size is 2 x 3.
+- Matrix B has 3 rows and 2 columns, so its size is 3 x 2.
+
+For matrix entries, the first subscript shows the row and the second subscript shows the column.
+
+For example:
+
+- a12 = -1 because it is in row 1, column 2 of A.
+- a23 = 5 because it is in row 2, column 3 of A.
+- b21 = -2 because it is in row 2, column 1 of B.
+- b32 = 1 because it is in row 3, column 2 of B.
+
+I also find a row by reading its entries from left to right, and a column by reading its entries from top to bottom.
+
 ## 1. Matrix Sizes
 
 Matrix A has 2 rows and 3 columns.
