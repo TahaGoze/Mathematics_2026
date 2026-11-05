@@ -1,6 +1,25 @@
 
 # Exercise 3 - Matrix Multiplication
 
+## Question
+
+Given the matrix sizes:
+
+- A: 2 x 3
+- B: 3 x 4
+- C: 4 x 2
+- D: 2 x 2
+
+Determine whether the following matrix products are defined:
+
+AB, BA, BC, CB, AC, CA, AD, DA
+
+If a product is defined, state the size of the result.
+
+Justify each answer using the dimension compatibility rule.
+
+## Solution
+
 ## Rule
 
 Matrix multiplication is possible when the number of columns of the first matrix equals the number of rows of the second matrix.
