@@ -19,3 +19,4 @@ Matrix multiplication is possible when the number of columns of the first matrix
 ## Verification
 
 All products were checked using the dimension compatibility rule.
+ 
