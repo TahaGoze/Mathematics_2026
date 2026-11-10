@@ -57,3 +57,4 @@ $= -3 - 3$
 $\det(B) = -6$
 
 This confirms the prediction.
+
