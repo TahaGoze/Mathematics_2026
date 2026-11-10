@@ -102,3 +102,4 @@ $$
 The multiplication adds 3 + 2 to make 5 and keeps 3 for the next step.
 
 This is how the Fibonacci sequence works.
+
