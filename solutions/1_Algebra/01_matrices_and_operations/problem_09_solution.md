@@ -167,3 +167,4 @@ RSx = \begin{pmatrix}
 $$
 
 Since the results are not equal, the order of these transformations matters.
+
