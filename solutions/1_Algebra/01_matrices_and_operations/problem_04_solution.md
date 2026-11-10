@@ -101,3 +101,4 @@ I checked the calculations using row-by-column multiplication.
 For example, the first entry of AB is 8, while the first entry of BA is 2.
 
 This shows that matrix multiplication is not commutative. The order of multiplication matters.
+
