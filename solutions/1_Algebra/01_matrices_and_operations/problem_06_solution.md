@@ -98,3 +98,4 @@ Both results are the same.
 **$(AB)^T = B^{T} A^{T}$**
 
 This verifies that the transpose of a matrix product reverses the order of multiplication.
+
