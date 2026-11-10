@@ -39,3 +39,4 @@ The rule says to multiply all diagonal numbers.
 $2 \cdot  (-3) \cdot  7 = -42$
 
 So the determinant is -42 without expanding.
+
