@@ -54,3 +54,4 @@ Geometrically, rotating by $\beta$ and then by $\alpha$ means rotating by the to
 For example, two rotations of $90^\circ$ give a rotation of $180^\circ$.
 
 This agrees with the matrix result.
+
