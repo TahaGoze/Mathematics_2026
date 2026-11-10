@@ -117,3 +117,4 @@ $$
 $$
 
 This confirms that all three row operations are reversible.
+
