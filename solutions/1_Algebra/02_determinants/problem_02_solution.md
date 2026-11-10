@@ -67,3 +67,4 @@ $\det(A) = 1 \cdot  (3 \cdot  7 - 4 \cdot  (-3))$
 = 33
 
 Both methods give the same result.
+
