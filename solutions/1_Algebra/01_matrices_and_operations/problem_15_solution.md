@@ -117,3 +117,4 @@ The first method uses 20 number multiplications.
 The second method uses 24 number multiplications.
 
 So calculating AB first is a little shorter in this example.
+
