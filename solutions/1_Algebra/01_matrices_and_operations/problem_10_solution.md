@@ -95,3 +95,4 @@ $$
 $$
 
 This happens because multiplying A by B means multiplying A by each column of B.
+
