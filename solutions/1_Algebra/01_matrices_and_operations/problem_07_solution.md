@@ -144,3 +144,4 @@ Both calculations follow the row-by-column multiplication rule.
 AI = IA = A and A + 0 = A, as expected.
 
 This shows that I is the identity matrix for multiplication and 0 is the identity matrix for addition.
+
