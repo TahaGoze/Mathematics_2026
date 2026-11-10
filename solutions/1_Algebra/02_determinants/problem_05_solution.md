@@ -97,3 +97,4 @@ $\det(A) = 1 \cdot  (1 \cdot  2 - 0 \cdot  4)$
 = 21
 
 Both methods give the same result.
+
