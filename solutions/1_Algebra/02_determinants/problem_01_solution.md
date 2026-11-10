@@ -59,3 +59,4 @@ In matrix B, the second row \begin{pmatrix}
 $$
 
 This also explains why its determinant is zero.
+
