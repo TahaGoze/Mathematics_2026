@@ -1,13 +1,22 @@
-
 # Exercise 4 - Matrix Multiplication
 
 ## Question
 
 Given the matrices:
 
-A = [[1, 2], [0, 1]]
+$$
+A = \begin{pmatrix}
+1 & 2 \\
+0 & 1 \\
+\end{pmatrix}
+$$
 
-B = [[2, 0], [3, 1]]
+$$
+B = \begin{pmatrix}
+2 & 0 \\
+3 & 1 \\
+\end{pmatrix}
+$$
 
 1. Calculate AB.
 2. Calculate BA.
@@ -17,9 +26,19 @@ Use this example to explain what noncommutativity of matrix multiplication means
 
 ## Solution
 
-A = [[1, 2], [0, 1]]
+$$
+A = \begin{pmatrix}
+1 & 2 \\
+0 & 1 \\
+\end{pmatrix}
+$$
 
-B = [[2, 0], [3, 1]]
+$$
+B = \begin{pmatrix}
+2 & 0 \\
+3 & 1 \\
+\end{pmatrix}
+$$
 
 ### 1. Calculate AB
 
@@ -32,7 +51,12 @@ I multiplied each row of A by each column of B and added the results.
 
 **Result:**
 
-AB = [[8, 2], [3, 1]]
+$$
+AB = \begin{pmatrix}
+8 & 2 \\
+3 & 1 \\
+\end{pmatrix}
+$$
 
 ### 2. Calculate BA
 
@@ -45,15 +69,30 @@ This time I multiplied the rows of B by the columns of A.
 
 **Result:**
 
-BA = [[2, 4], [3, 7]]
+$$
+BA = \begin{pmatrix}
+2 & 4 \\
+3 & 7 \\
+\end{pmatrix}
+$$
 
 ### 3. Comparison and Verification
 
 AB and BA are both possible because the matrices are 2 × 2.
 
-AB = [[8, 2], [3, 1]]
+$$
+AB = \begin{pmatrix}
+8 & 2 \\
+3 & 1 \\
+\end{pmatrix}
+$$
 
-BA = [[2, 4], [3, 7]]
+$$
+BA = \begin{pmatrix}
+2 & 4 \\
+3 & 7 \\
+\end{pmatrix}
+$$
 
 **AB is not equal to BA.**
 

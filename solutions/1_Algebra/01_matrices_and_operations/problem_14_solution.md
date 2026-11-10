@@ -1,49 +1,56 @@
-
 # Exercise 14 - Rotation Matrices
 
 ## Question
 
-R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]
+The rotation matrix is
 
-Show that R(alpha)R(beta) = R(alpha + beta).
+$$
+R(\theta)=
+\begin{pmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta \\
+\end{pmatrix}
+$$
 
-Explain the result geometrically.
+Calculate $R(\alpha)R(\beta)$ and show that it equals $R(\alpha+\beta)$.
 
 ## Solution
 
 First, multiply the two matrices:
 
-R(alpha)R(beta) =
+$$
+R(\alpha)R(\beta)=
+\begin{pmatrix}
+\cos\alpha\cos\beta-\sin\alpha\sin\beta & -\cos\alpha\sin\beta-\sin\alpha\cos\beta \\
+\sin\alpha\cos\beta+\cos\alpha\sin\beta & -\sin\alpha\sin\beta+\cos\alpha\cos\beta \\
+\end{pmatrix}
+$$
 
-[[cos(alpha)cos(beta) - sin(alpha)sin(beta),
-  -cos(alpha)sin(beta) - sin(alpha)cos(beta)],
+I use the angle-sum formulas:
 
- [sin(alpha)cos(beta) + cos(alpha)sin(beta),
-  -sin(alpha)sin(beta) + cos(alpha)cos(beta)]]
+$$
+\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta
+$$
 
-Now use the angle-sum formulas:
+$$
+\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta
+$$
 
-cos(alpha + beta) =
-cos(alpha)cos(beta) - sin(alpha)sin(beta)
+So the product is
 
-sin(alpha + beta) =
-sin(alpha)cos(beta) + cos(alpha)sin(beta)
-
-So the result becomes:
-
-[[cos(alpha + beta), -sin(alpha + beta)],
- [sin(alpha + beta), cos(alpha + beta)]]
-
-This is exactly R(alpha + beta).
-
-Therefore:
-
-R(alpha)R(beta) = R(alpha + beta)
+$$
+R(\alpha)R(\beta)=
+\begin{pmatrix}
+\cos(\alpha+\beta) & -\sin(\alpha+\beta) \\
+\sin(\alpha+\beta) & \cos(\alpha+\beta) \\
+\end{pmatrix}
+=R(\alpha+\beta)
+$$
 
 ## Verification and Explanation
 
-Rotating by beta and then by alpha gives a total rotation of alpha + beta.
+Geometrically, rotating by $\beta$ and then by $\alpha$ means rotating by the total angle $\alpha+\beta$.
 
-For example, rotating 90 degrees two times gives a total rotation of 180 degrees.
+For example, two rotations of $90^\circ$ give a rotation of $180^\circ$.
 
-This agrees with the matrix formula.
+This agrees with the matrix result.

@@ -1,13 +1,23 @@
-
 # Exercise 6 - Transpose
 
 ## Question
 
 Given the matrices:
 
-A = [[1, 2, 3], [4, 5, 6]]
+$$
+A = \begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+\end{pmatrix}
+$$
 
-B = [[1, 0], [2, 1], [-1, 3]]
+$$
+B = \begin{pmatrix}
+1 & 0 \\
+2 & 1 \\
+-1 & 3 \\
+\end{pmatrix}
+$$
 
 1. Calculate the transpose of A and B.
 2. Calculate AB.
@@ -21,11 +31,22 @@ To find the transpose, I change the rows into columns.
 
 A is a 2x3 matrix, so A^T is 3x2.
 
-A^T = [[1, 4], [2, 5], [3, 6]]
+$$
+A^{T} = \begin{pmatrix}
+1 & 4 \\
+2 & 5 \\
+3 & 6 \\
+\end{pmatrix}
+$$
 
 B is a 3x2 matrix, so B^T is 2x3.
 
-B^T = [[1, 2, -1], [0, 1, 3]]
+$$
+B^{T} = \begin{pmatrix}
+1 & 2 & -1 \\
+0 & 1 & 3 \\
+\end{pmatrix}
+$$
 
 ### 2. Calculate AB
 
@@ -38,13 +59,23 @@ I multiply each row of A by each column of B and add the results.
 
 **Result:**
 
-AB = [[2, 11], [8, 23]]
+$$
+AB = \begin{pmatrix}
+2 & 11 \\
+8 & 23 \\
+\end{pmatrix}
+$$
 
 ### 3. Verification
 
 First, I calculate the transpose of AB.
 
-(AB)^T = [[2, 8], [11, 23]]
+$$
+(AB)^T = \begin{pmatrix}
+2 & 8 \\
+11 & 23 \\
+\end{pmatrix}
+$$
 
 Now I calculate B^T A^T using row-by-column multiplication.
 
@@ -55,10 +86,15 @@ Now I calculate B^T A^T using row-by-column multiplication.
 
 **Result:**
 
-B^T A^T = [[2, 8], [11, 23]]
+$$
+B^{T} A^{T} = \begin{pmatrix}
+2 & 8 \\
+11 & 23 \\
+\end{pmatrix}
+$$
 
 Both results are the same.
 
-**(AB)^T = B^T A^T**
+**$(AB)^T = B^{T} A^{T}$**
 
 This verifies that the transpose of a matrix product reverses the order of multiplication.

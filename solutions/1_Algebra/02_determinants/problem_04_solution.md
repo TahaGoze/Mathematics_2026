@@ -1,13 +1,16 @@
-
 # Exercise 4 - Triangular Matrix
 
 ## Question
 
 Find the determinant without expanding:
 
-A = [[2, 4, 1],
-     [0, -3, 5],
-     [0, 0, 7]]
+$$
+A = \begin{pmatrix}
+2 & 4 & 1 \\
+0 & -3 & 5 \\
+0 & 0 & 7 \\
+\end{pmatrix}
+$$
 
 State the rule for triangular matrices.
 
@@ -23,9 +26,9 @@ The diagonal numbers are:
 
 So:
 
-det(A) = 2 * (-3) * 7
+$\det(A) = 2 \cdot  (-3) \cdot  7$
 
-det(A) = -42
+$\det(A) = -42$
 
 ## Verification
 
@@ -33,6 +36,6 @@ The matrix is upper triangular.
 
 The rule says to multiply all diagonal numbers.
 
-2 * (-3) * 7 = -42
+$2 \cdot  (-3) \cdot  7 = -42$
 
 So the determinant is -42 without expanding.

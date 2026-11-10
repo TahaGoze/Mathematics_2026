@@ -1,11 +1,20 @@
-
 # Exercise 11 - When Do Matrices Commute?
 
 ## Question
 
-A = [[1, 1], [0, 1]]
+$$
+A = \begin{pmatrix}
+1 & 1 \\
+0 & 1 \\
+\end{pmatrix}
+$$
 
-B = [[a, b], [c, d]]
+$$
+B = \begin{pmatrix}
+a & b \\
+c & d \\
+\end{pmatrix}
+$$
 
 Find the conditions for AB = BA and describe B.
 
@@ -13,13 +22,21 @@ Find the conditions for AB = BA and describe B.
 
 First, multiply A by B:
 
-AB = [[a + c, b + d],
-      [c, d]]
+$$
+AB = \begin{pmatrix}
+a + c & b + d \\
+c & d \\
+\end{pmatrix}
+$$
 
 Now multiply B by A:
 
-BA = [[a, a + b],
-      [c, c + d]]
+$$
+BA = \begin{pmatrix}
+a & a + b \\
+c & c + d \\
+\end{pmatrix}
+$$
 
 For AB = BA, the matching entries must be equal.
 
@@ -31,17 +48,38 @@ The bottom-right entry also gives c = 0.
 
 Therefore:
 
-B = [[a, b],
-     [0, a]]
+$$
+B = \begin{pmatrix}
+a & b \\
+0 & a \\
+\end{pmatrix}
+$$
 
 Here a and b can be any numbers.
 
 ## Verification
 
-Using B = [[a, b], [0, a]]:
+Using this matrix:
 
-AB = [[a, a + b], [0, a]]
+$$
+B = \begin{pmatrix}
+a & b \\
+0 & a \\
+\end{pmatrix}
+$$
 
-BA = [[a, a + b], [0, a]]
+$$
+AB = \begin{pmatrix}
+a & a + b \\
+0 & a \\
+\end{pmatrix}
+$$
+
+$$
+BA = \begin{pmatrix}
+a & a + b \\
+0 & a \\
+\end{pmatrix}
+$$
 
 Both results are equal.

@@ -1,11 +1,16 @@
-
 # Exercise 8 - Row Operations and Their Reversibility
 
 ## Question
 
 Given the matrix:
 
-A = [[1, 2, -1], [2, 4, 1], [-1, 1, 3]]
+$$
+A = \begin{pmatrix}
+1 & 2 & -1 \\
+2 & 4 & 1 \\
+-1 & 1 & 3 \\
+\end{pmatrix}
+$$
 
 Perform these operations in order:
 
@@ -25,29 +30,37 @@ I multiply the first row by 2:
 
 Then I subtract it from the second row:
 
-R2 = (2, 4, 1) - (2, 4, -2)
+$R_{2} = (2, 4, 1) - (2, 4, -2)$
 
-R2 = (0, 0, 3)
+$R_{2} = (0, 0, 3)$
 
 The matrix becomes:
 
-[[1, 2, -1],
- [0, 0, 3],
- [-1, 1, 3]]
+$$
+\begin{pmatrix}
+1 & 2 & -1 \\
+0 & 0 & 3 \\
+-1 & 1 & 3 \\
+\end{pmatrix}
+$$
 
 ### Step 2: R3 = R3 + R1
 
 I add the first row to the third row:
 
-R3 = (-1, 1, 3) + (1, 2, -1)
+$R_{3} = (-1, 1, 3) + (1, 2, -1)$
 
-R3 = (0, 3, 2)
+$R_{3} = (0, 3, 2)$
 
 The matrix becomes:
 
-[[1, 2, -1],
- [0, 0, 3],
- [0, 3, 2]]
+$$
+\begin{pmatrix}
+1 & 2 & -1 \\
+0 & 0 & 3 \\
+0 & 3 & 2 \\
+\end{pmatrix}
+$$
 
 ### Step 3: Swap R2 and R3
 
@@ -55,9 +68,13 @@ I change the positions of the second and third rows.
 
 The final matrix is:
 
-[[1, 2, -1],
- [0, 3, 2],
- [0, 0, 3]]
+$$
+\begin{pmatrix}
+1 & 2 & -1 \\
+0 & 3 & 2 \\
+0 & 0 & 3 \\
+\end{pmatrix}
+$$
 
 ## Reversibility
 
@@ -73,22 +90,30 @@ I reverse the operations in the opposite order.
 
 First, I swap R2 and R3 again:
 
-[[1, 2, -1],
- [0, 0, 3],
- [0, 3, 2]]
+$$
+\begin{pmatrix}
+1 & 2 & -1 \\
+0 & 0 & 3 \\
+0 & 3 & 2 \\
+\end{pmatrix}
+$$
 
 Then I subtract R1 from R3:
 
-R3 = (0, 3, 2) - (1, 2, -1) = (-1, 1, 3)
+$R_{3} = (0, 3, 2) - (1, 2, -1) = (-1, 1, 3)$
 
 Finally, I add 2R1 to R2:
 
-R2 = (0, 0, 3) + (2, 4, -2) = (2, 4, 1)
+$R_{2} = (0, 0, 3) + (2, 4, -2) = (2, 4, 1)$
 
 I get the original matrix:
 
-[[1, 2, -1],
- [2, 4, 1],
- [-1, 1, 3]]
+$$
+\begin{pmatrix}
+1 & 2 & -1 \\
+2 & 4 & 1 \\
+-1 & 1 & 3 \\
+\end{pmatrix}
+$$
 
 This confirms that all three row operations are reversible.

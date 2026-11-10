@@ -1,13 +1,22 @@
-
 # Exercise 5 - Matrix Times Vector
 
 ## Question
 
 Given:
 
-A = [[2, -1], [1, 3]]
+$$
+A = \begin{pmatrix}
+2 & -1 \\
+1 & 3 \\
+\end{pmatrix}
+$$
 
-x = [4, 2]
+$$
+x = \begin{pmatrix}
+4 \\
+2 \\
+\end{pmatrix}
+$$
 
 1. Calculate Ax.
 2. Express Ax as a linear combination of the columns of A.
@@ -23,26 +32,73 @@ I multiplied each row of A by vector x.
 
 **Result:**
 
-Ax = [6, 10]
+$$
+Ax = \begin{pmatrix}
+6 \\
+10 \\
+\end{pmatrix}
+$$
 
 ### 2. Linear Combination
 
 The columns of A are:
 
-- First column: [2, 1]
-- Second column: [-1, 3]
+First column:
+
+$$
+\begin{pmatrix}
+2 \\
+1 \\
+\end{pmatrix}
+$$
+
+Second column:
+
+$$
+\begin{pmatrix}
+-1 \\
+3 \\
+\end{pmatrix}
+$$
 
 Using the numbers 4 and 2 from vector x:
 
-4 x [2, 1] + 2 x [-1, 3]
+$$
+4 x \begin{pmatrix}
+2 \\
+1 \\
+\end{pmatrix} + 2 x \begin{pmatrix}
+-1 \\
+3 \\
+\end{pmatrix}
+$$
 
-= [8, 4] + [-2, 6]
+$$
+= \begin{pmatrix}
+8 \\
+4 \\
+\end{pmatrix} + \begin{pmatrix}
+-2 \\
+6 \\
+\end{pmatrix}
+$$
 
-= [6, 10]
+$$
+= \begin{pmatrix}
+6 \\
+10 \\
+\end{pmatrix}
+$$
 
 ### Verification
 
-Both methods give the same result: [6, 10].
+Both methods give the same result:
+
+$$
+\begin{pmatrix}
+6 \\
+10 \\
+\end{pmatrix}
+$$
 
 So the calculation is correct.
-    

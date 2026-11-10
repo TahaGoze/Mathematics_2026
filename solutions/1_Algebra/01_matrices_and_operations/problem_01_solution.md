@@ -4,9 +4,20 @@
 
 Given matrices:
 
-A = [[2, -1, 3], [0, 4, 5]]
+$$
+A = \begin{pmatrix}
+2 & -1 & 3 \\
+0 & 4 & 5 \\
+\end{pmatrix}
+$$
 
-B = [[1, 0], [-2, 3], [4, 1]]
+$$
+B = \begin{pmatrix}
+1 & 0 \\
+-2 & 3 \\
+4 & 1 \\
+\end{pmatrix}
+$$
 
 1. State the sizes of matrices A and B.
 2. Find a12, a23, b21 and b32.
@@ -54,7 +65,7 @@ The second row of A is:
 
 $$
 \begin{pmatrix}
-0 & 4 & 5
+0 & 4 & 5 \\
 \end{pmatrix}
 $$
 
@@ -64,7 +75,6 @@ $$
 \begin{pmatrix}
 1 \\
 -2 \\
-4
+4 \\
 \end{pmatrix}
 $$
- 

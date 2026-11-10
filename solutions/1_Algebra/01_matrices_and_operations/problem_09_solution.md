@@ -1,15 +1,29 @@
-
 # Exercise 9 - Composing Transformations
 
 ## Question
 
 Given:
 
-S = [[2, 0], [0, 1]]
+$$
+S = \begin{pmatrix}
+2 & 0 \\
+0 & 1 \\
+\end{pmatrix}
+$$
 
-R = [[0, -1], [1, 0]]
+$$
+R = \begin{pmatrix}
+0 & -1 \\
+1 & 0 \\
+\end{pmatrix}
+$$
 
-x = [1, 2]
+$$
+x = \begin{pmatrix}
+1 \\
+2 \\
+\end{pmatrix}
+$$
 
 Calculate RSx and SRx. Compare the results and explain why the order matters.
 
@@ -19,51 +33,113 @@ Calculate RSx and SRx. Compare the results and explain why the order matters.
 
 First, I calculate Sx:
 
-Sx = [[2, 0], [0, 1]] * [1, 2]
+$$
+Sx = \begin{pmatrix}
+2 & 0 \\
+0 & 1 \\
+\end{pmatrix} \cdot  \begin{pmatrix}
+1 \\
+2 \\
+\end{pmatrix}
+$$
 
-First row: 2 * 1 + 0 * 2 = 2
+First row: $2 \cdot  1 + 0 \cdot  2 = 2$
 
-Second row: 0 * 1 + 1 * 2 = 2
+Second row: $0 \cdot  1 + 1 \cdot  2 = 2$
 
-Sx = [2, 2]
+$$
+Sx = \begin{pmatrix}
+2 \\
+2 \\
+\end{pmatrix}
+$$
 
 Now I multiply by R:
 
-RSx = [[0, -1], [1, 0]] * [2, 2]
+$$
+RSx = \begin{pmatrix}
+0 & -1 \\
+1 & 0 \\
+\end{pmatrix} \cdot  \begin{pmatrix}
+2 \\
+2 \\
+\end{pmatrix}
+$$
 
-First row: 0 * 2 + (-1) * 2 = -2
+First row: $0 \cdot  2 + (-1) \cdot  2 = -2$
 
-Second row: 1 * 2 + 0 * 2 = 2
+Second row: $1 \cdot  2 + 0 \cdot  2 = 2$
 
-RSx = [-2, 2]
+$$
+RSx = \begin{pmatrix}
+-2 \\
+2 \\
+\end{pmatrix}
+$$
 
 ### 2. Calculate SRx
 
 First, I calculate Rx:
 
-Rx = [[0, -1], [1, 0]] * [1, 2]
+$$
+Rx = \begin{pmatrix}
+0 & -1 \\
+1 & 0 \\
+\end{pmatrix} \cdot  \begin{pmatrix}
+1 \\
+2 \\
+\end{pmatrix}
+$$
 
-First row: 0 * 1 + (-1) * 2 = -2
+First row: $0 \cdot  1 + (-1) \cdot  2 = -2$
 
-Second row: 1 * 1 + 0 * 2 = 1
+Second row: $1 \cdot  1 + 0 \cdot  2 = 1$
 
-Rx = [-2, 1]
+$$
+Rx = \begin{pmatrix}
+-2 \\
+1 \\
+\end{pmatrix}
+$$
 
 Now I multiply by S:
 
-SRx = [[2, 0], [0, 1]] * [-2, 1]
+$$
+SRx = \begin{pmatrix}
+2 & 0 \\
+0 & 1 \\
+\end{pmatrix} \cdot  \begin{pmatrix}
+-2 \\
+1 \\
+\end{pmatrix}
+$$
 
-First row: 2 * (-2) + 0 * 1 = -4
+First row: $2 \cdot  (-2) + 0 \cdot  1 = -4$
 
-Second row: 0 * (-2) + 1 * 1 = 1
+Second row: $0 \cdot  (-2) + 1 \cdot  1 = 1$
 
-SRx = [-4, 1]
+$$
+SRx = \begin{pmatrix}
+-4 \\
+1 \\
+\end{pmatrix}
+$$
 
 ## Comparison and Explanation
 
-RSx = [-2, 2]
+$$
+RSx = \begin{pmatrix}
+-2 \\
+2 \\
+\end{pmatrix}
+$$
 
-SRx = [-4, 1]
+$$
+SRx = \begin{pmatrix}
+-4 \\
+1 \\
+\end{pmatrix}
+$$
 
 The results are different.
 
@@ -80,6 +156,14 @@ The order matters because rotation changes the direction of the vector before or
 
 I calculated both results using matrix-vector multiplication.
 
-RSx = [-2, 2] and SRx = [-4, 1].
+$$
+RSx = \begin{pmatrix}
+-2 \\
+2 \\
+\end{pmatrix} and SRx = \begin{pmatrix}
+-4 \\
+1 \\
+\end{pmatrix}.
+$$
 
 Since the results are not equal, the order of these transformations matters.

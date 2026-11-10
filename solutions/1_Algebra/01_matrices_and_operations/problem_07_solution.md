@@ -1,11 +1,15 @@
-
 # Exercise 7 - Identity Matrix, Zero Matrix, and Powers
 
 ## Question
 
 Given:
 
-A = [[2, 1], [0, 2]]
+$$
+A = \begin{pmatrix}
+2 & 1 \\
+0 & 2 \\
+\end{pmatrix}
+$$
 
 Calculate AI, IA, A + 0, A^2 and A^3.
 
@@ -17,21 +21,46 @@ Explain the roles of I and 0, and describe the pattern in the powers of A.
 
 The identity matrix is:
 
-I = [[1, 0], [0, 1]]
+$$
+I = \begin{pmatrix}
+1 & 0 \\
+0 & 1 \\
+\end{pmatrix}
+$$
 
 Multiplying A by I does not change A.
 
-AI = [[2, 1], [0, 2]]
+$$
+AI = \begin{pmatrix}
+2 & 1 \\
+0 & 2 \\
+\end{pmatrix}
+$$
 
-IA = [[2, 1], [0, 2]]
+$$
+IA = \begin{pmatrix}
+2 & 1 \\
+0 & 2 \\
+\end{pmatrix}
+$$
 
 The zero matrix is:
 
-0 = [[0, 0], [0, 0]]
+$$
+0 = \begin{pmatrix}
+0 & 0 \\
+0 & 0 \\
+\end{pmatrix}
+$$
 
 Adding zero does not change the matrix.
 
-A + 0 = [[2, 1], [0, 2]]
+$$
+A + 0 = \begin{pmatrix}
+2 & 1 \\
+0 & 2 \\
+\end{pmatrix}
+$$
 
 ### 2. Calculate A^2
 
@@ -46,11 +75,16 @@ I multiplied the rows of A by the columns of A.
 
 **Result:**
 
-A^2 = [[4, 4], [0, 4]]
+$$
+A^{2} = \begin{pmatrix}
+4 & 4 \\
+0 & 4 \\
+\end{pmatrix}
+$$
 
 ### 3. Calculate A^3
 
-A^3 = A^2 x A
+$A^{3} = A^{2} x A$
 
 I used the same row-by-column multiplication.
 
@@ -61,17 +95,37 @@ I used the same row-by-column multiplication.
 
 **Result:**
 
-A^3 = [[8, 12], [0, 8]]
+$$
+A^{3} = \begin{pmatrix}
+8 & 12 \\
+0 & 8 \\
+\end{pmatrix}
+$$
 
 ### 4. Pattern
 
 Comparing the matrices:
 
-A = [[2, 1], [0, 2]]
+$$
+A = \begin{pmatrix}
+2 & 1 \\
+0 & 2 \\
+\end{pmatrix}
+$$
 
-A^2 = [[4, 4], [0, 4]]
+$$
+A^{2} = \begin{pmatrix}
+4 & 4 \\
+0 & 4 \\
+\end{pmatrix}
+$$
 
-A^3 = [[8, 12], [0, 8]]
+$$
+A^{3} = \begin{pmatrix}
+8 & 12 \\
+0 & 8 \\
+\end{pmatrix}
+$$
 
 The diagonal numbers double each time: 2, 4, 8.
 
