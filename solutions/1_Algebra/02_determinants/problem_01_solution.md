@@ -18,13 +18,13 @@ B = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Find which matrix is invertible.
+Find which matrix is invertible and justify the answer using the determinants.
 
 ## Solution
 
 For a 2x2 matrix, the determinant formula is:
 
-$det = ad - bc$
+$\det = ad-bc$
 
 First matrix:
 
@@ -48,15 +48,6 @@ The second matrix is not invertible because its determinant is zero.
 
 ## Verification
 
-$$
-In matrix B, the second row \begin{pmatrix}
-2 \\
-14 \\
-\end{pmatrix} is 2 times the first row \begin{pmatrix}
-1 \\
-7 \\
-\end{pmatrix}.
-$$
+The first row of $B$ is $(1,7)$, and the second row is $(2,14)$.
 
-This also explains why its determinant is zero.
-
+Since $(2,14)=2(1,7)$, the second row is twice the first one. The rows are dependent, so the determinant of $B$ is zero.

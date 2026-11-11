@@ -25,7 +25,9 @@ x = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Calculate RSx and SRx. Compare the results and explain why the order matters.
+Here $S$ describes nonuniform scaling (it doubles the horizontal coordinate), and $R$ describes a $90^\circ$ counterclockwise rotation.
+
+Calculate $RSx$ and $SRx$. Compare the results and explain geometrically why the order of these transformations matters.
 
 ## Solution
 
@@ -154,17 +156,6 @@ The order matters because rotation changes the direction of the vector before or
 
 ## Verification
 
-I calculated both results using matrix-vector multiplication.
+I checked both vectors using matrix-vector multiplication.
 
-$$
-RSx = \begin{pmatrix}
--2 \\
-2 \\
-\end{pmatrix} and SRx = \begin{pmatrix}
--4 \\
-1 \\
-\end{pmatrix}.
-$$
-
-Since the results are not equal, the order of these transformations matters.
-
+The final vectors are different, so $RSx\neq SRx$. This confirms that the order matters.

@@ -12,7 +12,7 @@ R(\theta)=
 \end{pmatrix}
 $$
 
-Calculate $R(\alpha)R(\beta)$ and show that it equals $R(\alpha+\beta)$.
+Calculate $R(\alpha)R(\beta)$ and use the sine and cosine angle-sum formulas to show that it equals $R(\alpha+\beta)$. Explain the result geometrically.
 
 ## Solution
 

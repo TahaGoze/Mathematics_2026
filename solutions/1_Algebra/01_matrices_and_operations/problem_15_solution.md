@@ -24,7 +24,7 @@ C = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Calculate (AB)C and A(BC). Compare the results and explain associativity.
+Calculate $(AB)C$ and $A(BC)$. Compare the final results and the number of intermediate operations in both calculation paths. Explain what associativity means in this example.
 
 ## Solution
 

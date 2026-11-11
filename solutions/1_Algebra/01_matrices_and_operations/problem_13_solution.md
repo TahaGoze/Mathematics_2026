@@ -9,14 +9,18 @@ F = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Calculate F^2, F^3, F^4 and F^5.
+Calculate $F^2$, $F^3$, $F^4$ and $F^5$. Compare the entries with the sequence $0,1,1,2,3,5,8,\ldots$ and describe the relationship.
+
+Then calculate
 
 $$
-Compare the results with Fibonacci numbers and calculate F \cdot  \begin{pmatrix}
+F\begin{pmatrix}
 a \\
 b \\
-\end{pmatrix}.
+\end{pmatrix}
 $$
+
+Explain how this multiplication gives the sum of two consecutive numbers and keeps one of them for the next step.
 
 ## Solution
 
@@ -54,16 +58,11 @@ The Fibonacci sequence is:
 
 0, 1, 1, 2, 3, 5, 8, ...
 
-I can see these numbers in the matrices.
+The top rows of $F^2$, $F^3$, $F^4$ and $F^5$ are $(2,1)$, $(3,2)$, $(5,3)$ and $(8,5)$. Each pair contains two consecutive Fibonacci numbers.
 
-Each new Fibonacci number is the sum of the previous two numbers.
+The bottom row also has consecutive Fibonacci numbers from the sequence. Each new number is the sum of the previous two numbers.
 
-$$
-Now multiply F by \begin{pmatrix}
-a \\
-b \\
-\end{pmatrix}:
-$$
+Now I multiply $F$ by the vector:
 
 $$
 F \cdot  \begin{pmatrix}
@@ -99,7 +98,9 @@ F \cdot  \begin{pmatrix}
 \end{pmatrix}
 $$
 
-The multiplication adds 3 + 2 to make 5 and keeps 3 for the next step.
+The multiplication changes $(a,b)$ into $(a+b,a)$. It adds the two numbers and keeps $a$ for the next step.
+
+For the example, it adds $3+2=5$ and keeps $3$.
 
 This is how the Fibonacci sequence works.
 

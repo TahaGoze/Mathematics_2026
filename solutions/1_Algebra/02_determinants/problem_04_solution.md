@@ -12,13 +12,13 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-State the rule for triangular matrices.
+State the rule for any triangular matrix and explain why it works using the zero entries in this example.
 
 ## Solution
 
 This is an upper triangular matrix because all numbers below the main diagonal are zero.
 
-For a triangular matrix, the determinant is the product of the numbers on the main diagonal.
+In a triangular matrix, the determinant is the product of the diagonal numbers. Here, all other terms in the determinant expansion contain a zero from below the diagonal, so only the diagonal product remains.
 
 The diagonal numbers are:
 

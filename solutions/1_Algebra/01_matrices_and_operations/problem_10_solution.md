@@ -17,7 +17,11 @@ B = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-Find Ab1, Ab2 and AB. Explain the connection.
+Let $b_1$ and $b_2$ be the first and second columns of $B$.
+
+1. Calculate $Ab_1$ and $Ab_2$.
+2. Calculate $AB$.
+3. Compare $Ab_1$ and $Ab_2$ with the columns of $AB$, and explain why they are the same.
 
 ## Solution
 
@@ -39,27 +43,27 @@ b_{2} = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-First, calculate Ab1:
+First, calculate $Ab_1$:
 
 First row: $1(1) + 2(-1) + 0(3) = -1$
 
 Second row: $0(1) + 1(-1) + 1(3) = 2$
 
 $$
-Ab1 = \begin{pmatrix}
+Ab_1 = \begin{pmatrix}
 -1 \\
 2 \\
 \end{pmatrix}
 $$
 
-Now calculate Ab2:
+Now calculate $Ab_2$:
 
 First row: $1(2) + 2(0) + 0(1) = 2$
 
 Second row: $0(2) + 1(0) + 1(1) = 1$
 
 $$
-Ab2 = \begin{pmatrix}
+Ab_2 = \begin{pmatrix}
 2 \\
 1 \\
 \end{pmatrix}
