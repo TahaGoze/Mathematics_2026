@@ -29,10 +29,12 @@ t^2-2=0
 $$
 
 $$
-t^2=2 \quad \Rightarrow \quad t=\sqrt{2}\text{ or }t=-\sqrt{2}
+t^2=2
 $$
 
-So the matrix is not invertible for $t=\pm\sqrt{2}$.
+This gives $t=\sqrt{2}$ or $t=-\sqrt{2}$.
+
+So the matrix is not invertible for these two values.
 
 ## Verification
 
