@@ -8,7 +8,7 @@ $$
 \begin{cases}
 2x-y+z=4, \\
 x+3y-2z=1, \\
-3x+y+z=7.
+3x+y+z=7. \\
 \end{cases}
 $$
 
